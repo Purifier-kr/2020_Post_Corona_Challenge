@@ -25,3 +25,21 @@
 5번째 Topic: 0.018*"test" + 0.014*"hospital" + 0.013*"care" + 0.013*"patient" + 0.012*"home" + 0.008*"positive" +...  
 6번째 Topic: 0.014*"epidemic" + 0.011*"control" + 0.011*"medical" + 0.009*"prevention" + 0.008*"public" +...  
 7번째 Topic: 0.011*"government" + 0.009*"pandemic" + 0.006*"lockdown" + 0.005*"business" + 0.005*"food" +...  
+#### <Feature Engineering>  
+  - 상관관계 확인  
+  - lag 1~14 까지 주어서 모든 경우의 수를 피쳐화  
+  - rolling을 사용하여 target값의 트렌드를 피쳐로 사용  
+#### <모델링>  
+  - Train:  
+미주: america_train.pkl  
+유럽: europe_train.pkl  
+중국 외 아시아: asia_train.pkl  
+- Test:  
+미주: america_test.pkl  
+유럽: europe_test.pkl  
+중국 외 아시아: asia_test.pkl  
+
+- 활용 모델:  
+XGBoosting( x )  
+GradientBoosting( x )  
+RandomForest( o )  
