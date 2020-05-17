@@ -1,6 +1,14 @@
 # 2020_Post_Corona_Challenge
 2020 포스트 코로나 챌린지 프로젝트
 
+### 결과  
+|  <center> 일자</center> |  <center>5/6</center> |  <center>5/7</center> |   <center>5/8</center> |  <center>5/9</center> |  <center>5/10</center> |   <center>5/11</center> |  <center>5/12</center> |  <center>5/13</center> |   <center>5/14</center> |  <center>5/15</center> |  <center>5/16</center> |   <center>5/17</center> |  <center>5/18</center> |  <center>5/19</center> | 
+|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| <center> 실제값 </center> | <center>2</center> | <center>3</center> |   <center> 11</center> | <center>1</center> | <center>8 </center> | <center> 6 </center> | <center>5 </center> | <center>4 </center> | <center>3 </center> | <center>5 </center> | <center>10 </center> | <center> 7 </center> | <center> yet </center> | <center>yet </center> |
+| <center> 예측값 </center> | <center>6 </center> | <center>6 </center> |   <center>6</center> | <center>5</center> | <center>5</center> |   <center>4 </center> | <center>4 </center> | <center>5</center> |   <center> 5</center> | <center>5 </center> | <center>5</center> |   <center>4</center> | <center>5 </center> | <center>5 </center> |  
+
+
+
 ### 1. DATA 폴더: 프로젝트 관련 data   
 - 주최측 제공 데이터( 기사, 로밍 데이터)는 저작권에 의해 업로드가 불가합니다.  
 - 일일 입국자 데이터(항공정보포탈시스템: http://www.airportal.go.kr/)  
