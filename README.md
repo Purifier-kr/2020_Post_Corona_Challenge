@@ -1,5 +1,6 @@
 ## <2020 포스트 코로나 챌린지 프로젝트>
-<img src="./img/포스트코로나.jpg" width="550" height="400">
+<img src="./img/포스트코로나.jpg" width="550" height="400">  
+  
 ##### 이 프로젝트는 <2020 포스트 코로나 챌린지 프로젝트> 출품작으로, 우수상을 수상한 PURIFIER팀의 코드와 발표 내용을 공유하는 목적으로 만들어졌습니다.
 
 - 공모전 주제 : 해외의 감염병이 국내로 유입될 위험도 산출 모델링
@@ -170,7 +171,7 @@ RandomForest( o )
 |:--------:|:--------:|:--------:|
 |<img src="./img/도현희.jpg" width="150" height="150">| <center>도현희</center> | <center>hheedeeo@gmail.com</center> |
 |<img src="./img/유진우.jpg" width="150" height="150">| <center>유진우</center> | <center>phoenix9373@naver.com</center> |
-|<img src="./img/주건재.jpg" width="150" height="150">| <center>주건재</center> | <center>phoenix9373@naver.com</center> |
+|<img src="./img/주건재.jpg" width="150" height="150">| <center>주건재</center> | <center>binggraetogether@gmail.com</center> |
 |<img src="./img/채정회.jpg" width="150" height="150">| <center>채정회</center> | <center>cjhhi100@gmail.com</center> |
   
 #### 자세한 ppt는 SlideShare에서 확인하실 수 있습니다: (https://www.slideshare.net/HyeonHeeDo/ai-post-corona-ai-challenge)
