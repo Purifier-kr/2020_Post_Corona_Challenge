@@ -1,4 +1,4 @@
-## <2020 포스트 코로나 챌린지 프로젝트>
+# PURIFIER - 2020 포스트 코로나 챌린지 프로젝트 
 <img src="./img/포스트코로나.jpg" width="550" height="400">
 
 **이 프로젝트는 <2020 포스트 코로나 챌린지 프로젝트> 출품작으로, 우수상을 수상한 PURIFIER팀의 코드와 발표 내용을 공유하는 목적으로 만들어졌습니다.**
@@ -6,9 +6,10 @@
 - 공모전 주제 : 해외의 감염병이 국내로 유입될 위험도 산출 모델링
 - 공모전 목적 : 국내 해외유입 확진자수를 예측하여 감염병 대응 의사결정에 도움을 준다.
 - 공모전 기간 : 2020.04.06 ~ 2020.05.10
-- 주최: AI HUB, 과학기술정보통신부, 한국정보화진흥원, kt
-- 수상: 우수상   
+- 공모전 주최: AI HUB, 과학기술정보통신부, 한국정보화진흥원, kt  
 - 공모전 링크: http://www.aihub.or.kr/problem_contest/covid19
+
+### 🌟 우수상 수상 🌟
 
 
 # 목차
@@ -16,11 +17,11 @@
 [2. 데이터 소개 및 전처리](#2-데이터-소개-및-전처리)   
 [3. 뉴스 기사 데이터 토픽 모델링](#3-뉴스-기사-토픽-모델링)   
 [4. 모델 개발 및 훈련](#4-모델-개발-및-훈련)   
-[5. 결과](#5-결과)  
+[5. 모델 예측 결과](#5-모델-예측-결과)  
 
-[-DATA 폴더 설명](#data-폴더)   
-[-Source Code 설명](#source-code-설명)
-[-Contributor](#마무리)
+[-DATA 폴더](#data-폴더)   
+[-Source Code 설명](#source-code-설명)  
+[-Team Members 소개](#team-members-소개)    
 <br>
 <br>
 
@@ -100,7 +101,7 @@
 <br>
 <br>
 
-## 5 결과
+## 5 모델 예측 결과
 |  <center> 일자</center> |  <center>5/6</center> |  <center>5/7</center> |   <center>5/8</center> |  <center>5/9</center> |  <center>5/10</center> |   <center>5/11</center> |  <center>5/12</center> |  <center>5/13</center> |   <center>5/14</center> |  <center>5/15</center> |  <center>5/16</center> |   <center>5/17</center> |  <center>5/18</center> |  <center>5/19</center> | 
 |:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | <center> 실제값 </center> | <center>2</center> | <center>3</center> |   <center> 11</center> | <center>1</center> | <center>8 </center> | <center> 6 </center> | <center>5 </center> | <center>4 </center> | <center>3 </center> | <center>5 </center> | <center>10 </center> | <center> 7 </center> | <center> 10 <center> | <center>4</center> |
@@ -164,9 +165,8 @@ RandomForest( o )
 - C-D. 미주 기준 해외 입국자와 로밍 데이터 비교  
 - E.국내 해외유입 확진자 수 데이터 시각화
 
-================================================================================
-## 마무리
-## Contributor
+================================================================================  
+## Team Members 소개 
 |<center>:blush:</center>| <center>이름</center> | <center>email</center> |
 |:--------:|:--------:|:--------:|
 |<img src="./img/도현희.jpg" width="150" height="150">| <center>도현희</center> | <center>hheedeeo@gmail.com</center> |
@@ -174,4 +174,4 @@ RandomForest( o )
 |<img src="./img/주건재.jpg" width="150" height="150">| <center>주건재</center> | <center>binggraetogether@gmail.com</center> |
 |<img src="./img/채정회.jpg" width="150" height="150">| <center>채정회</center> | <center>cjhhi100@gmail.com</center> |
   
-#### 자세한 ppt는 SlideShare에서 확인하실 수 있습니다: (https://www.slideshare.net/HyeonHeeDo/ai-post-corona-ai-challenge)
+#### 더욱 자세한 내용은 [SlideShare PPT](https://www.slideshare.net/HyeonHeeDo/ai-post-corona-ai-challenge)에서 확인하실 수 있습니다. 
