@@ -1,28 +1,29 @@
 ## <2020 포스트 코로나 챌린지 프로젝트>
+<img src="./img/포스트코로나.jpg" width="550" height="400">
+###### 이 프로젝트는 <2020 포스트 코로나 챌린지 프로젝트> 출품작으로, 우수상을 수상한 PURIFIER팀의 코드와 발표 내용을 공유하는 목적으로 만들어졌습니다.
+
+- 공모전 주제 : 해외의 감염병이 국내로 유입될 위험도 산출 모델링
+- 공모전 목적 : 국내 해외유입 확진자수를 예측하여 감염병 대응 의사결정에 도움을 준다.
+- 공모전 기간 : 2020.04.06 ~ 2020.05.10
 - 주최: AI HUB, 과학기술정보통신부, 한국정보화진흥원, kt
-- 부문: 모델링 부문
-- 수상: 우수상
-
-#### 자세한 ppt는 SlideShare에서 확인하실 수 있습니다: (https://www.slideshare.net/HyeonHeeDo/ai-post-corona-ai-challenge)
-
-### [결과]  
-|  <center> 일자</center> |  <center>5/6</center> |  <center>5/7</center> |   <center>5/8</center> |  <center>5/9</center> |  <center>5/10</center> |   <center>5/11</center> |  <center>5/12</center> |  <center>5/13</center> |   <center>5/14</center> |  <center>5/15</center> |  <center>5/16</center> |   <center>5/17</center> |  <center>5/18</center> |  <center>5/19</center> | 
-|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
-| <center> 실제값 </center> | <center>2</center> | <center>3</center> |   <center> 11</center> | <center>1</center> | <center>8 </center> | <center> 6 </center> | <center>5 </center> | <center>4 </center> | <center>3 </center> | <center>5 </center> | <center>10 </center> | <center> 7 </center> | <center> 10 <center> | <center>4</center> |
-| <center> 예측값 </center> | <center>6 </center> | <center>6 </center> |   <center>6</center> | <center>5</center> | <center>5</center> |   <center>4 </center> | <center>4 </center> | <center>5</center> |   <center> 5</center> | <center>5 </center> | <center>5</center> |   <center>4</center> | <center>5 </center> | <center>5 </center> |
-| <center> 오차 </center> | <center>4</center> | <center>3</center> |   <center>5</center> | <center>4</center> | <center>3</center> |   <center>2</center> | <center>1</center> | <center>1</center> |   <center>2</center> | <center>0</center> | <center>5</center> |   <center>3</center> | <center>5</center> | <center>1</center> |  
+- 수상: 우수상   
+- 공모전 링크: http://www.aihub.or.kr/problem_contest/covid19
 
 
+# 목차
+[1. 프로젝트 배경](#1-프로젝트-배경)   
+[2. 데이터 소개 및 전처리](#2-데이터-소개-및-전처리)   
+[3. 뉴스 기사 데이터 토픽 모델링](#3-뉴스-기사-토픽-모델링)   
+[4. 모델 개발 및 훈련](#4-모델-개발-및-훈련)   
+[5. 결과](#5-결과)  
 
-## [DATA 폴더: 프로젝트 관련 data]
-- 주최측 제공 데이터( 기사, 로밍 데이터)는 저작권에 의해 업로드가 불가합니다.  
-- 일일 입국자수 데이터(항공정보포탈시스템: http://www.airportal.go.kr/)  
-- 해외 코로나 확진자수 현황 데이터 (질병관리본부 보도자료: http://www.cdc.go.kr/)  
-- 국내 해외유입 확진자수 데이터(감염병now: http://ncov.mohw.go.kr/)
+[-DATA 폴더 설명](#data-폴더)   
+[-Source Code 설명](#source-code-설명)
+[-Contributor](#마무리)
+<br>
+<br>
 
-
-## [프로젝트 소개]
-## 1. 프로젝트 배경
+## 1 프로젝트 배경
 <img src="./img/해외유입비율.jpg" width="550" height="400">
 
 - 중국에서 시작된 신종 바이러스 COVID-19 가 세계적 대유행이 되었다. 한국에서도 1월부터 전파가 시작되어 현재까지 1만명 이상의 누적 확진자수를 보이며 **확산이 지속**되고 있다.
@@ -41,7 +42,7 @@
 <br>
 <br>
 
-## 2. 데이터 소개 및 전처리
+## 2 데이터 소개 및 전처리
 <img src="./img/데이터소개.jpg" width="800" height="350">
 <img src="./img/처리과정.jpg" width="800" height="400">   
 
@@ -79,13 +80,13 @@
 <br>
 <br>
 
-## 3. 뉴스 기사 데이터 토픽 모델링
+## 3 뉴스 기사 토픽 모델링
 ![LDA](./img/LDA.jpg)
 ![토픽](./img/토픽.jpg)
 <br>
 <br>
 
-## 4. 모델 개발 및 훈련
+## 4 모델 개발 및 훈련
 ![모델](./img/모델.jpg)
 > **INSIGHT**
 > 1. 시간에 의존적인 변수들
@@ -97,11 +98,27 @@
 > 6. 미주, 유럽, 중국 외 아시아를 대륙별로 나누어 Random Forest 적용, 각 예측값을 합산하여 최종 예측값 도출
 <br>
 <br>
+
+### 5 결과
+|  <center> 일자</center> |  <center>5/6</center> |  <center>5/7</center> |   <center>5/8</center> |  <center>5/9</center> |  <center>5/10</center> |   <center>5/11</center> |  <center>5/12</center> |  <center>5/13</center> |   <center>5/14</center> |  <center>5/15</center> |  <center>5/16</center> |   <center>5/17</center> |  <center>5/18</center> |  <center>5/19</center> | 
+|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| <center> 실제값 </center> | <center>2</center> | <center>3</center> |   <center> 11</center> | <center>1</center> | <center>8 </center> | <center> 6 </center> | <center>5 </center> | <center>4 </center> | <center>3 </center> | <center>5 </center> | <center>10 </center> | <center> 7 </center> | <center> 10 <center> | <center>4</center> |
+| <center> 예측값 </center> | <center>6 </center> | <center>6 </center> |   <center>6</center> | <center>5</center> | <center>5</center> |   <center>4 </center> | <center>4 </center> | <center>5</center> |   <center> 5</center> | <center>5 </center> | <center>5</center> |   <center>4</center> | <center>5 </center> | <center>5 </center> |
+| <center> 오차 </center> | <center>4</center> | <center>3</center> |   <center>5</center> | <center>4</center> | <center>3</center> |   <center>2</center> | <center>1</center> | <center>1</center> |   <center>2</center> | <center>0</center> | <center>5</center> |   <center>3</center> | <center>5</center> | <center>1</center> |  
+<br>
+<br>
+<br>
 <br>
 <br>
 
 ================================================================================
-### Source Codes 설명
+## DATA 폴더
+- 주최측 제공 데이터( 기사, 로밍 데이터)는 저작권에 의해 업로드가 불가합니다.  
+- 일일 입국자수 데이터(항공정보포탈시스템: http://www.airportal.go.kr/)  
+- 해외 코로나 확진자수 현황 데이터 (질병관리본부 보도자료: http://www.cdc.go.kr/)  
+- 국내 해외유입 확진자수 데이터(감염병now: http://ncov.mohw.go.kr/)
+
+### Source Code 설명
 #### 1. <전처리>  
 - A.뉴스 데이터
 - B.해외 신규 확진자 데이터  
@@ -138,9 +155,22 @@ XGBoosting( x )
 GradientBoosting( x )  
 RandomForest( o )  
 
-#### 4. <시각화>  
+#### 4. <시각화>
+[시각화 Output 보기](https://nbviewer.jupyter.org/github/Purifier-kr/2020_Post_Corona_Challenge/blob/master/4.%EC%8B%9C%EA%B0%81%ED%99%94_Post_Corona_Challenge_team_Purifier.ipynb)
 - A.뉴스 데이터  
 - B.국외 코로나 발생현황 데이터 시각화  
 - C.해외 입국자 데이터 시각화  
 - C-D. 미주 기준 해외 입국자와 로밍 데이터 비교  
 - E.국내 해외유입 확진자 수 데이터 시각화
+
+================================================================================
+## 마무리
+## Contributor>
+|<center>:blush:</center>| <center>이름</center> | <center>email</center> |
+|:--------:|:--------:|:--------:|
+|<img src="./img/도현희.jpg" width="150" height="150">| <center>도현희</center> | <center>hheedeeo@gmail.com</center> |
+|<img src="./img/유진우.jpg" width="150" height="150">| <center>유진우</center> | <center>phoenix9373@naver.com</center> |
+|<img src="./img/주건재.jpg" width="150" height="150">| <center>주건재</center> | <center>phoenix9373@naver.com</center> |
+|<img src="./img/채정회.jpg" width="150" height="150">| <center>채정회</center> | <center>cjhhi100@gmail.com</center> |
+  
+#### 자세한 ppt는 SlideShare에서 확인하실 수 있습니다: (https://www.slideshare.net/HyeonHeeDo/ai-post-corona-ai-challenge)
